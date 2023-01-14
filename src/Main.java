@@ -82,5 +82,4 @@ public class Main {
         int totalKilogram = totalGram / 1000;
         System.out.println("Итоговый вес завтрака " + totalGram + " грамм или " + totalKilogram + " килограмм.");
     }
-
 }
