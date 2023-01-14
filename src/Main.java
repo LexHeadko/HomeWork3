@@ -5,7 +5,7 @@ public class Main {
         task3();
         task4();
         task5();
-        //task6();
+        task6();
         //task7();
         //task8();
     }
@@ -72,4 +72,15 @@ public class Main {
         int totalBrownColorsJars = totalClassInSchool * 4;
         System.out.println("В школе, где " + totalClassInSchool + " классов, нужно " + totalWhiteColorJars + " банок белой краски и " + totalBrownColorsJars + " банок коричневой краски.");
     }
+    public static void task6() {
+        System.out.println("Задача 6");
+        short bananasGram = 5 * 80;
+        short milkGram = 2 * 105;
+        short iceCreamGram = 2 * 100;
+        short eggsGram = 4 * 70;
+        int totalGram = bananasGram + milkGram + iceCreamGram + eggsGram;
+        int totalKilogram = totalGram / 1000;
+        System.out.println("Итоговый вес завтрака " + totalGram + " грамм или " + totalKilogram + " килограмм.");
+    }
+
 }
