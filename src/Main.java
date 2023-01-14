@@ -3,7 +3,7 @@ public class Main {
         task1();
         task2();
         task3();
-        //task4();
+        task4();
         //task5();
         //task6();
         //task7();
@@ -36,7 +36,10 @@ public class Main {
         short per5 = -159;
         short per6 = 27897;
         byte per7 = 67;
+        float total = per1 + per2 + per3 + per4 + per5 + per6 +per7;
+        System.out.println("Сумма всех переменных равна " + total);
     }
+
     public static void task3() {
         System.out.println("Задача 3");
         byte ludmilaPavlovnaLearners = 23;
@@ -45,5 +48,18 @@ public class Main {
         short totalPepers = 480;
         int pepers = totalPepers / (ludmilaPavlovnaLearners + annaSergeevnaLeaarners + ekaterinaAndreevnaLearners);
         System.out.println("На каждого ученика рассчитано " + pepers + " листов бумаги.");
+    }
+
+    public static void task4() {
+        System.out.println("Задача 4");
+        byte productivityMachineInMinute = 16 / 2;
+        int productivityIn20Minutes = productivityMachineInMinute * 20;
+        int productivityIn24Hours = productivityIn20Minutes * 3 * 24;
+        int productivityIn3Day = productivityIn24Hours * 3;
+        int productivityInMonth = productivityIn3Day * 10;
+        System.out.println("За 20 минут машина произвела " + productivityIn20Minutes + " штук бутылок(ки).");
+        System.out.println("За 24 часа машина произвела " + productivityIn24Hours + " штук бутылок(ки).");
+        System.out.println("За 3 дня машина произвела " + productivityIn3Day + " штук бутылок(ки).");
+        System.out.println("За месяц машина произвела " + productivityInMonth + " штук бутылок(ки).");
     }
 }
