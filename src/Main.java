@@ -6,7 +6,7 @@ public class Main {
         task4();
         task5();
         task6();
-        //task7();
+        task7();
         //task8();
     }
 
@@ -36,7 +36,7 @@ public class Main {
         short per5 = -159;
         short per6 = 27897;
         byte per7 = 67;
-        float total = per1 + per2 + per3 + per4 + per5 + per6 +per7;
+        float total = per1 + per2 + per3 + per4 + per5 + per6 + per7;
         System.out.println("Сумма всех переменных равна " + total);
     }
 
@@ -62,6 +62,7 @@ public class Main {
         System.out.println("За 3 дня машина произвела " + productivityIn3Day + " штук бутылок(ки).");
         System.out.println("За месяц машина произвела " + productivityInMonth + " штук бутылок(ки).");
     }
+
     public static void task5() {
         System.out.println("Задача 5");
         byte totalJar = 120;
@@ -72,6 +73,7 @@ public class Main {
         int totalBrownColorsJars = totalClassInSchool * 4;
         System.out.println("В школе, где " + totalClassInSchool + " классов, нужно " + totalWhiteColorJars + " банок белой краски и " + totalBrownColorsJars + " банок коричневой краски.");
     }
+
     public static void task6() {
         System.out.println("Задача 6");
         short bananasGram = 5 * 80;
@@ -81,5 +83,18 @@ public class Main {
         int totalGram = bananasGram + milkGram + iceCreamGram + eggsGram;
         int totalKilogram = totalGram / 1000;
         System.out.println("Итоговый вес завтрака " + totalGram + " грамм или " + totalKilogram + " килограмм.");
+    }
+    public static void task7() {
+        System.out.println("Задача 7");
+        byte totalWeightKilogram = 7;
+        short minWeightLossGram = 250;
+        short maxWeightLossGram = 500;
+        int dayOfWeightLoss;
+        dayOfWeightLoss = totalWeightKilogram * 1000 / minWeightLossGram;
+        System.out.println(dayOfWeightLoss + " дней потребуется, чтобы сбросить нужный вес, если сбрасывать по минимуму!");
+        dayOfWeightLoss = totalWeightKilogram * 1000 / maxWeightLossGram;
+        System.out.println(dayOfWeightLoss + " дней потребуется, чтобы сбросить нужный вес, если сбрасывать по максимуму!");
+        dayOfWeightLoss = totalWeightKilogram * 1000 / ((maxWeightLossGram + minWeightLossGram) / 2);
+        System.out.println(dayOfWeightLoss + " дней потребуется в среднем!");
     }
 }
