@@ -109,4 +109,8 @@ public class Main {
         int dayOfWeightLoss = (minDayOfWeightLoss + maxDayOfWeightLoss) / 2;
         System.out.println(dayOfWeightLoss + " дней потребуется в среднем!");
     }
+    public static void task9() {
+        System.out.println("Задача 8");
+
+    }
 }
