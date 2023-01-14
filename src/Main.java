@@ -7,7 +7,7 @@ public class Main {
         task5();
         task6();
         task7();
-        //task8();
+        task8();
     }
 
     public static void task1() {
@@ -95,6 +95,18 @@ public class Main {
         dayOfWeightLoss = totalWeightKilogram * 1000 / maxWeightLossGram;
         System.out.println(dayOfWeightLoss + " дней потребуется, чтобы сбросить нужный вес, если сбрасывать по максимуму!");
         dayOfWeightLoss = totalWeightKilogram * 1000 / ((maxWeightLossGram + minWeightLossGram) / 2);
+        System.out.println(dayOfWeightLoss + " дней потребуется в среднем!");
+    }
+    public static void task8() {
+        System.out.println("Задача 7.1");
+        byte totalWeightKilogram = 7;
+        short minWeightLossGram = 250;
+        short maxWeightLossGram = 500;
+        int minDayOfWeightLoss = totalWeightKilogram * 1000 / maxWeightLossGram;
+        int maxDayOfWeightLoss = totalWeightKilogram * 1000 / minWeightLossGram;
+        System.out.println(minDayOfWeightLoss + " дней потребуется, чтобы сбросить нужный вес, если сбрасывать по минимуму!");
+        System.out.println(maxDayOfWeightLoss + " дней потребуется, чтобы сбросить нужный вес, если сбрасывать по максимуму!");
+        int dayOfWeightLoss = (minDayOfWeightLoss + maxDayOfWeightLoss) / 2;
         System.out.println(dayOfWeightLoss + " дней потребуется в среднем!");
     }
 }
