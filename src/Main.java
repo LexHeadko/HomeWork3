@@ -2,7 +2,7 @@ public class Main {
     public static void main(String[] args) {
         task1();
         task2();
-        //task3();
+        task3();
         //task4();
         //task5();
         //task6();
@@ -37,5 +37,13 @@ public class Main {
         short per6 = 27897;
         byte per7 = 67;
     }
-
+    public static void task3() {
+        System.out.println("Задача 3");
+        byte ludmilaPavlovnaLearners = 23;
+        byte annaSergeevnaLeaarners = 27;
+        byte ekaterinaAndreevnaLearners = 30;
+        short totalPepers = 480;
+        int pepers = totalPepers / (ludmilaPavlovnaLearners + annaSergeevnaLeaarners + ekaterinaAndreevnaLearners);
+        System.out.println("На каждого ученика рассчитано " + pepers + " листов бумаги.");
+    }
 }
