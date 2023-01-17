@@ -8,6 +8,7 @@ public class Main {
         task6();
         task7();
         task8();
+        task9();
     }
 
     public static void task1() {
@@ -111,6 +112,22 @@ public class Main {
     }
     public static void task9() {
         System.out.println("Задача 8");
-
+        int wageMisha = 67760;
+        int wageDenis = 83690;
+        int wageKristina = 76230;
+        float newWage;
+        float difference;
+        newWage = (float) ((float) wageMisha + wageMisha * 0.1);
+        difference = newWage * 12 - wageMisha * 12;
+        System.out.println("Зарплата Миши за месяц после повышения: " + newWage + " рублей!"
+        + " Годовый доход вырос на " + difference + " рублей!");
+        newWage = (float) ((float) wageDenis + wageDenis * 0.1);
+        difference = newWage * 12 - wageDenis * 12;
+        System.out.println("Зарплата Дениса за месяц после повышения: " + newWage + " рублей!"
+                + " Годовый доход вырос на " + difference + " рублей!");
+        newWage = (float) ((float) wageKristina + wageKristina * 0.1);
+        difference = newWage * 12 - wageKristina * 12;
+        System.out.println("Зарплата Кристины за месяц после повышения: " + newWage + " рублей!"
+                + " Годовый доход вырос на " + difference + " рублей!");
     }
 }
